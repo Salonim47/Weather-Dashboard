@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-wrap">
+        <header>
+            <input type="text" autocomplete="off" class="search-box" placeholder="Search for a city..." id="searchBox"/>
+        </header>
+        <main>
+            <section class="location">
+                <div class="city" id="city">San Francisco, US</div>
+                <div class="date" id="date">Wednesday 15 April 2026</div>
+            </section>
+            <div class="current">
+                <div class="temp"><span id="temp">18</span><span>°c</span></div>
+                <div class="weather" id="weather">Sunny</div>
+                <div class="hi-low" id="hi-low">13°c / 22°c</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

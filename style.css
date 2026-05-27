@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 600px;
+    background: linear-gradient(180deg, #38bdf8 0%, #0ea5e9 100%);
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+.search-box {
+    width: 100%;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: 0.4s ease-out;
+}
+
+.search-box::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.search-box:focus {
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.location .city {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-shadow: 1px 2px rgba(0,0,0,0.1);
+}
+
+.location .date {
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: italic;
+    opacity: 0.8;
+}
+
+.current {
+    margin-top: 50px;
+}
+
+.current .temp {
+    font-size: 6rem;
+    font-weight: 700;
+    text-shadow: 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+}
+
+.current .temp span {
+    font-size: 3rem;
+}
+
+.current .weather {
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+}
+
+.current .hi-low {
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
